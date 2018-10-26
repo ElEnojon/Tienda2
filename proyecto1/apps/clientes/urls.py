@@ -10,5 +10,14 @@ urlpatterns = [
     path('plantilla',plantilla),
     path('especial', viewClientes.as_view()),
     path('nuevoRegistro', nuevoRegistro, name="nuevoRegistro")
-    path('editarRegistro/<idCliente>', editarRegistro, name="editarRegistro")
+    # path('editarRegistro/<idCliente>', editarRegistro, name="editarRegistro")
     ]
+
+ # urlpatterns = [
+	# path('',index),
+ #    path('index', index),
+ #    path('plantilla',plantilla),
+ #    path('especial', viewClientes.as_view()),
+ #    path('nuevoRegistro', nuevoRegistro, name="nuevoRegistro")
+ #    path('editarRegistro/<idCliente>', editarRegistro, name="editarRegistro")
+ #    ]
