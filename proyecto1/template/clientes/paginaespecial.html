@@ -1,0 +1,16 @@
+
+{% extends 'base/index.html' %}
+{% load staticfiles %}
+
+ {% block extracss %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style_especial.css' %}">{% endblock %}
+ {% block content %}
+
+{% include 'clientes/nav.html' %}
+{% include 'clientes/infoClientes.html' %}
+
+{% endblock %}
+
+
+
+<!-- ESPECIAL -->

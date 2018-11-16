@@ -1,0 +1,16 @@
+<ol>
+	<li> Opcion 1 </li>
+	<li> Opcion 1 </li>
+	<li> Opcion 1 </li>
+	<li> Opcion 1 </li>
+	<li> Opcion 1 </li>
+
+</ol>
+<!--Incluir bloques-->
+
+{% for cliente in clientes %}
+<p>{{cliente.nombre}}
+	{{cliente.apellido}}</p>
+	{%empty%}
+	<p>no hay clientes</p>
+{% endfor %}

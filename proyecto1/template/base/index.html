@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Proyecto{% endblock %}</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+{% block extracss %}{% endblock %} <!--Bloque para incustrar otras css diferente por pagina-->
+
+
+
+
+<!--<style type="text/css">
+	body{
+		background-color: red; /*-Si le ponesmos estilos las demas paginas lo heredan*/
+</style>-->
+<body>
+
+	{% block header %}
+	<header>Este es el encabezado</header>
+	{% endblock %}
+
+
+	<div>{% block content %}Contenido de la Pagina{% endblock %}</div>
+	<footer>{% block footer %}Este es el pie de pagina.{% endblock %}</footer>
+
+
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>
